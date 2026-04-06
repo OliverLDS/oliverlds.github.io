@@ -3,28 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Oliver Lee</title>
+  <title>Contact | Oliver Zhou</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Cormorant+Garamond:wght@500;600;700&amp;display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="cv.html">CV</a>
-      <a href="research.html">Research</a>
-      <a href="contact.html">Contact</a>
+    <nav class="site-nav">
+      <a class="brand" href="index.html">Oliver Zhou</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cv.html">Portfolio</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </div>
     </nav>
   </header>
 
-  <main class="container narrow">
-    <h1>Contact</h1>
-    <ul>
-      <li>Email: your-email@example.com</li>
-      <li>GitHub: <a href="https://github.com/OliverLDS">github.com/OliverLDS</a></li>
-      <li>LinkedIn: add your LinkedIn URL</li>
-      <li>Google Scholar: add your profile URL</li>
-      <li>ORCID / SSRN: add your profile URL</li>
-    </ul>
+  <main class="container page-shell">
+    <section class="page-intro reveal">
+      <p class="eyebrow">Contact</p>
+      <h1>Reach out directly.</h1>
+      <p class="lead">
+        For research, collaboration, or technical discussion around agentic AI,
+        data-science workflows, and finance-oriented systems, email is the best
+        starting point.
+      </p>
+    </section>
+
+    <section class="contact-grid">
+      <article class="contact-card reveal">
+        <p class="card-kicker">Email</p>
+        <h2>oliver.yxzhou@gmail.com</h2>
+        <a href="mailto:oliver.yxzhou@gmail.com">Send email</a>
+      </article>
+
+      <article class="contact-card reveal">
+        <p class="card-kicker">GitHub</p>
+        <h2>OliverLDS</h2>
+        <a href="https://github.com/OliverLDS">github.com/OliverLDS</a>
+      </article>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading compact">
+        <p class="eyebrow">Topics</p>
+        <h2>Areas I am actively building around.</h2>
+      </div>
+      <div class="pill-row">
+        <span class="pill">Agent design and workflow scaffolding</span>
+        <span class="pill">Human-guided AI systems</span>
+        <span class="pill">Financial data infrastructure</span>
+        <span class="pill">Research automation in R</span>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Oliver Zhou</p>
+      <p>
+        <a href="mailto:oliver.yxzhou@gmail.com">oliver.yxzhou@gmail.com</a>
+        <span class="footer-sep">/</span>
+        <a href="https://github.com/OliverLDS">GitHub</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

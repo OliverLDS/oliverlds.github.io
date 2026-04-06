@@ -3,46 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV | Oliver Lee</title>
+  <title>Portfolio | Oliver Zhou</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Cormorant+Garamond:wght@500;600;700&amp;display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="cv.html">CV</a>
-      <a href="research.html">Research</a>
-      <a href="contact.html">Contact</a>
+    <nav class="site-nav">
+      <a class="brand" href="index.html">Oliver Zhou</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cv.html" aria-current="page">Portfolio</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
   </header>
 
-  <main class="container narrow">
-    <h1>Curriculum Vitae</h1>
-    <p>
-      Put a concise web version of your CV here. Also upload a PDF into the
-      <code>files/</code> folder, then link it below.
-    </p>
+  <main class="container page-shell">
+    <section class="page-intro reveal">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Selected repositories and system themes.</h1>
+      <p class="lead">
+        The public codebase centers on a connected stack: agent design,
+        foundation-model inference, financial data access, research workflows,
+        and execution-oriented strategy logic.
+      </p>
+    </section>
 
-    <p><a href="files/resume.pdf">Download PDF CV</a></p>
+    <section class="section reveal">
+      <div class="section-heading compact">
+        <p class="eyebrow">Research Interests</p>
+        <h2>Current directions</h2>
+      </div>
+      <div class="pill-row">
+        <span class="pill">Agentic AI applications in data science</span>
+        <span class="pill">Human-in-the-loop workflow design</span>
+        <span class="pill">Financial research infrastructure</span>
+        <span class="pill">Structured model interaction in R</span>
+      </div>
+    </section>
 
-    <h2>Education</h2>
-    <ul>
-      <li>Degree, University, Year</li>
-      <li>Degree, University, Year</li>
-    </ul>
+    <section class="section">
+      <div class="section-heading compact reveal">
+        <p class="eyebrow">Featured Repositories</p>
+        <h2>Projects that define the portfolio.</h2>
+      </div>
 
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Research interest 1</li>
-      <li>Research interest 2</li>
-      <li>Research interest 3</li>
-    </ul>
+      <div class="stack-list">
+        <article class="stack-card reveal">
+          <div>
+            <h3>agentr</h3>
+            <p>
+              A package for transitional scaffolding: agent-spec design,
+              workflow proposal review, approval states, and constrained LLM
+              bridges for structured agent-building.
+            </p>
+          </div>
+          <a href="https://github.com/OliverLDS/agentr">Repository</a>
+        </article>
 
-    <h2>Selected Experience</h2>
-    <ul>
-      <li>Role, Institution, Years</li>
-      <li>Role, Institution, Years</li>
-    </ul>
+        <article class="stack-card reveal">
+          <div>
+            <h3>inferencer</h3>
+            <p>
+              A lightweight interface to hosted model providers, keeping common
+              inference patterns simple across Gemini, Groq, OpenRouter, and
+              Cerebras.
+            </p>
+          </div>
+          <a href="https://github.com/OliverLDS/inferencer">Repository</a>
+        </article>
+
+        <article class="stack-card reveal">
+          <div>
+            <h3>investdatar</h3>
+            <p>
+              Local synchronization and standardization of market and macro data
+              sources, with structured descriptions intended for downstream
+              analysis and LLM-assisted workflows.
+            </p>
+          </div>
+          <a href="https://github.com/OliverLDS/investdatar">Repository</a>
+        </article>
+
+        <article class="stack-card reveal">
+          <div>
+            <h3>investlabr</h3>
+            <p>
+              A research layer for macro and cross-asset analysis, focusing on
+              reusable data preparation, regime interpretation, simulation, and
+              presentation-ready visualization.
+            </p>
+          </div>
+          <a href="https://github.com/OliverLDS/investlabr">Repository</a>
+        </article>
+
+        <article class="stack-card reveal">
+          <div>
+            <h3>strategyr</h3>
+            <p>
+              An execution-oriented package for target positions, portfolio
+              adjustments, and path-dependent backtesting under changing account
+              state.
+            </p>
+          </div>
+          <a href="https://github.com/OliverLDS/strategyr">Repository</a>
+        </article>
+
+        <article class="stack-card reveal">
+          <div>
+            <h3>okxr / binxr / dispatchr / litxr</h3>
+            <p>
+              Supporting packages for exchange APIs, communication channels, and
+              literature workflows, rounding out the broader applied systems
+              toolkit.
+            </p>
+          </div>
+          <a href="https://github.com/OliverLDS">GitHub Profile</a>
+        </article>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Oliver Zhou</p>
+      <p>
+        <a href="mailto:oliver.yxzhou@gmail.com">oliver.yxzhou@gmail.com</a>
+        <span class="footer-sep">/</span>
+        <a href="https://github.com/OliverLDS">GitHub</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

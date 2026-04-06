@@ -3,52 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oliver Lee | Academic Portfolio</title>
+  <title>Oliver Zhou | Portfolio</title>
+  <meta
+    name="description"
+    content="Oliver Zhou builds agentic AI systems for data science, financial research, and workflow automation."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Cormorant+Garamond:wght@500;600;700&amp;display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="cv.html">CV</a>
-      <a href="research.html">Research</a>
-      <a href="contact.html">Contact</a>
+    <nav class="site-nav">
+      <a class="brand" href="index.html">Oliver Zhou</a>
+      <div class="nav-links">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="cv.html">Portfolio</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Oliver Lee</h1>
-      <p class="tagline">Academic Portfolio / Research Page</p>
-      <p>
-        Welcome to my academic homepage. This site can be used to introduce your
-        research interests, post working papers, and provide a downloadable CV.
-      </p>
-      <p>
-        Replace this text with a short professional biography, your affiliation,
-        and your main research topics.
-      </p>
+  <main>
+    <section class="hero-shell">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Agentic AI • Data Science • Finance</p>
+          <h1>Designing agentic systems for data-science and financial research workflows.</h1>
+          <p class="lead">
+            I build research-oriented software around agent design, model inference,
+            market data infrastructure, and human-in-the-loop workflow automation.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="research.html">View Working Paper</a>
+            <a class="button button-secondary" href="https://github.com/OliverLDS">Explore GitHub</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal">
+          <p class="panel-label">Current Focus</p>
+          <ul class="signal-list">
+            <li>Transitional scaffolding for agent design and workflow refinement</li>
+            <li>LLM tooling in R for structured inference and agent interaction</li>
+            <li>Data infrastructure for macro, market, and investment research</li>
+          </ul>
+          <div class="contact-chip">
+            <span>Email</span>
+            <a href="mailto:oliver.yxzhou@gmail.com">oliver.yxzhou@gmail.com</a>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <section class="card-grid">
-      <article class="card">
-        <h2>CV</h2>
-        <p>Provide both an online CV page and a downloadable PDF version.</p>
-        <p><a href="cv.html">View CV page</a></p>
-      </article>
+    <section class="container section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Overview</p>
+        <h2>A portfolio organized around workflow systems, not isolated tools.</h2>
+      </div>
 
-      <article class="card">
-        <h2>Research</h2>
-        <p>List working papers, research in progress, and published work.</p>
-        <p><a href="research.html">View research page</a></p>
-      </article>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <p class="card-kicker">Research</p>
+          <h3>Working paper on transitional scaffolding</h3>
+          <p>
+            The current paper argues that agent construction should be treated as
+            transitional scaffolding: a staged process of elicitation, proposal
+            review, refinement, and implementation handoff.
+          </p>
+          <a href="research.html">Read the research page</a>
+        </article>
 
-      <article class="card">
-        <h2>Contact</h2>
-        <p>Add your email, GitHub, LinkedIn, Google Scholar, SSRN, or ORCID.</p>
-        <p><a href="contact.html">View contact page</a></p>
-      </article>
+        <article class="feature-card reveal">
+          <p class="card-kicker">Code</p>
+          <h3>An R ecosystem for agentic and financial workflows</h3>
+          <p>
+            Public repositories span agent scaffolding, hosted model inference,
+            financial data synchronization, market research, and strategy tooling.
+          </p>
+          <a href="cv.html">Browse selected projects</a>
+        </article>
+
+        <article class="feature-card reveal">
+          <p class="card-kicker">Contact</p>
+          <h3>Open to research and systems conversations</h3>
+          <p>
+            The site is built as a compact research portfolio with direct links to
+            code, paper, and contact details.
+          </p>
+          <a href="contact.html">Get in touch</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected Systems</p>
+        <h2>Representative public work.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <h3>agentr</h3>
+            <span>R package</span>
+          </div>
+          <p>
+            A human-guided scaffolding layer for agent design, workflow proposal
+            review, and constrained LLM interaction.
+          </p>
+          <a href="https://github.com/OliverLDS/agentr">github.com/OliverLDS/agentr</a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <h3>inferencer</h3>
+            <span>LLM tooling</span>
+          </div>
+          <p>
+            A minimal R interface for hosted model APIs across providers, covering
+            prompts, embeddings, image generation, multimodal inputs, and TTS.
+          </p>
+          <a href="https://github.com/OliverLDS/inferencer">github.com/OliverLDS/inferencer</a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <h3>investdatar</h3>
+            <span>Data layer</span>
+          </div>
+          <p>
+            Retrieval and local synchronization for investment datasets, with
+            source-aware metadata designed for downstream analyst workflows.
+          </p>
+          <a href="https://github.com/OliverLDS/investdatar">github.com/OliverLDS/investdatar</a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <h3>investlabr + strategyr</h3>
+            <span>Research stack</span>
+          </div>
+          <p>
+            Research-oriented macro and cross-asset analysis on one side, and
+            execution-aware strategy workflows on the other.
+          </p>
+          <a href="https://github.com/OliverLDS/investlabr">github.com/OliverLDS/investlabr</a>
+        </article>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Oliver Zhou</p>
+      <p>
+        <a href="mailto:oliver.yxzhou@gmail.com">oliver.yxzhou@gmail.com</a>
+        <span class="footer-sep">/</span>
+        <a href="https://github.com/OliverLDS">GitHub</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

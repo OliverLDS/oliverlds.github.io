@@ -3,46 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research | Oliver Lee</title>
+  <title>Research | Oliver Zhou</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Cormorant+Garamond:wght@500;600;700&amp;display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="cv.html">CV</a>
-      <a href="research.html">Research</a>
-      <a href="contact.html">Contact</a>
+    <nav class="site-nav">
+      <a class="brand" href="index.html">Oliver Zhou</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cv.html">Portfolio</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
   </header>
 
-  <main class="container narrow">
-    <h1>Research</h1>
-
-    <section class="paper">
-      <h2>Working Paper Title</h2>
-      <p><strong>Status:</strong> Working paper</p>
-      <p><strong>Coauthors:</strong> Add names here</p>
-      <p>
-        Add a short abstract here. Explain the question, method, and why the
-        project matters.
-      </p>
-      <p>
-        <a href="files/working-paper-1.pdf">PDF</a>
-        |
-        <a href="#">Code</a>
+  <main class="container page-shell">
+    <section class="page-intro reveal">
+      <p class="eyebrow">Research</p>
+      <h1>Current working paper.</h1>
+      <p class="lead">
+        The current paper and adjacent code repositories focus on how human
+        workflows can be transformed into explicit, reviewable agent designs
+        without collapsing directly into opaque end-to-end automation.
       </p>
     </section>
 
-    <section class="paper">
-      <h2>Research in Progress Title</h2>
-      <p><strong>Status:</strong> Draft in progress</p>
-      <p><strong>Coauthors:</strong> Add names here</p>
+    <section class="paper-highlight reveal">
+      <p class="paper-status">Working Paper</p>
+      <h2>From Human Workflow to Agentic Workflow: Transitional Scaffolding with the R Package agentr</h2>
       <p>
-        Use this section for ongoing research that is not yet ready as a full
-        public working paper.
+        This paper introduces <code>agentr</code> as an R-based framework for the
+        cognitive and human-interaction core of intelligent-agent scaffolding.
+        The central claim is that the hard part of building useful agents is often
+        not raw execution, but externalizing tacit expert workflow into explicit
+        design artifacts that can be revised and approved.
       </p>
+      <p>
+        The manuscript makes three main contributions: it frames the transition
+        from human workflow to agentic workflow as <em>transitional scaffolding</em>,
+        proposes a two-axis design model separating subsystem composition from
+        workflow structure, and presents the current package implementation with
+        before-and-after refinement demonstrations. Two illustrative cases center
+        on economic analysis with visualization and market investment suggestion writing.
+      </p>
+      <div class="link-row">
+        <a class="button button-primary" href="files/agentr_v0.1.pdf">Open PDF</a>
+        <a class="button button-secondary" href="https://github.com/OliverLDS/agentr">Related Repository</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading compact reveal">
+        <p class="eyebrow">Linked Research Code</p>
+        <h2>Repositories that support the broader agenda.</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <p class="card-kicker">Inference Layer</p>
+          <h3>inferencer</h3>
+          <p>
+            Makes hosted foundation models accessible from R through a compact,
+            provider-agnostic interface for prompt-driven experimentation.
+          </p>
+          <a href="https://github.com/OliverLDS/inferencer">View repository</a>
+        </article>
+
+        <article class="feature-card reveal">
+          <p class="card-kicker">Data Layer</p>
+          <h3>investdatar</h3>
+          <p>
+            Provides synchronized local datasets and source descriptions for
+            macro, market, and investment analysis workflows.
+          </p>
+          <a href="https://github.com/OliverLDS/investdatar">View repository</a>
+        </article>
+
+        <article class="feature-card reveal">
+          <p class="card-kicker">Research Layer</p>
+          <h3>investlabr</h3>
+          <p>
+            Extends the stack into research-ready analytics, visualizations, and
+            human-facing market interpretation.
+          </p>
+          <a href="https://github.com/OliverLDS/investlabr">View repository</a>
+        </article>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Oliver Zhou</p>
+      <p>
+        <a href="mailto:oliver.yxzhou@gmail.com">oliver.yxzhou@gmail.com</a>
+        <span class="footer-sep">/</span>
+        <a href="https://github.com/OliverLDS">GitHub</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
