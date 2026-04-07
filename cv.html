@@ -28,78 +28,71 @@
   <main class="container page-shell">
     <section class="page-intro reveal">
       <p class="eyebrow">Portfolio</p>
-      <h1>Selected repositories and system themes.</h1>
+      <h1>Selected repositories.</h1>
       <p class="lead">
-        The public codebase centers on a connected stack: agent design,
-        foundation-model inference, financial data access, research workflows,
-        and execution-oriented strategy logic.
+        This page collects the public tools behind my work on agent workflows,
+        model interaction, and research infrastructure.
       </p>
     </section>
 
-    <section class="section reveal">
-      <div class="section-heading compact">
-        <p class="eyebrow">Research Interests</p>
-        <h2>Current directions</h2>
+    <section class="section">
+      <div class="section-heading compact reveal">
+        <p class="eyebrow">Agent Systems</p>
+        <h2>Design and workflow refinement.</h2>
       </div>
-      <div class="pill-row">
-        <span class="pill">Agentic AI applications in data science</span>
-        <span class="pill">Human-in-the-loop workflow design</span>
-        <span class="pill">Financial research infrastructure</span>
-        <span class="pill">Structured model interaction in R</span>
+      <div class="stack-list">
+        <article class="stack-card reveal">
+          <div>
+            <h3>agentr</h3>
+            <p>An R package for designing and refining human-reviewed agent workflows.</p>
+          </div>
+          <a href="https://github.com/OliverLDS/agentr">Repository</a>
+        </article>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading compact reveal">
-        <p class="eyebrow">Featured Repositories</p>
-        <h2>Projects that define the portfolio.</h2>
+        <p class="eyebrow">Inference Tooling</p>
+        <h2>Model access in R.</h2>
       </div>
-
       <div class="stack-list">
         <article class="stack-card reveal">
           <div>
-            <h3>agentr</h3>
-            <p>
-              A package for transitional scaffolding: agent-spec design,
-              workflow proposal review, approval states, and constrained LLM
-              bridges for structured agent-building.
-            </p>
-          </div>
-          <a href="https://github.com/OliverLDS/agentr">Repository</a>
-        </article>
-
-        <article class="stack-card reveal">
-          <div>
             <h3>inferencer</h3>
-            <p>
-              A lightweight interface to hosted model providers, keeping common
-              inference patterns simple across Gemini, Groq, OpenRouter, and
-              Cerebras.
-            </p>
+            <p>A lightweight R interface for calling hosted model APIs across providers.</p>
           </div>
           <a href="https://github.com/OliverLDS/inferencer">Repository</a>
         </article>
+      </div>
+    </section>
 
+    <section class="section">
+      <div class="section-heading compact reveal">
+        <p class="eyebrow">Data Infrastructure</p>
+        <h2>Research-ready data access.</h2>
+      </div>
+      <div class="stack-list">
         <article class="stack-card reveal">
           <div>
             <h3>investdatar</h3>
-            <p>
-              Local synchronization and standardization of market and macro data
-              sources, with structured descriptions intended for downstream
-              analysis and LLM-assisted workflows.
-            </p>
+            <p>A package for retrieving and synchronizing investment and macro datasets.</p>
           </div>
           <a href="https://github.com/OliverLDS/investdatar">Repository</a>
         </article>
+      </div>
+    </section>
 
+    <section class="section">
+      <div class="section-heading compact reveal">
+        <p class="eyebrow">Research And Strategy</p>
+        <h2>Analysis and execution workflows.</h2>
+      </div>
+      <div class="stack-list">
         <article class="stack-card reveal">
           <div>
             <h3>investlabr</h3>
-            <p>
-              A research layer for macro and cross-asset analysis, focusing on
-              reusable data preparation, regime interpretation, simulation, and
-              presentation-ready visualization.
-            </p>
+            <p>Tools for macro and cross-asset research, visualization, and analysis.</p>
           </div>
           <a href="https://github.com/OliverLDS/investlabr">Repository</a>
         </article>
@@ -107,23 +100,23 @@
         <article class="stack-card reveal">
           <div>
             <h3>strategyr</h3>
-            <p>
-              An execution-oriented package for target positions, portfolio
-              adjustments, and path-dependent backtesting under changing account
-              state.
-            </p>
+            <p>An execution-oriented package for strategy logic and path-dependent backtesting.</p>
           </div>
           <a href="https://github.com/OliverLDS/strategyr">Repository</a>
         </article>
+      </div>
+    </section>
 
+    <section class="section">
+      <div class="section-heading compact reveal">
+        <p class="eyebrow">Supporting Tools</p>
+        <h2>Related packages.</h2>
+      </div>
+      <div class="stack-list">
         <article class="stack-card reveal">
           <div>
             <h3>okxr / binxr / dispatchr / litxr</h3>
-            <p>
-              Supporting packages for exchange APIs, communication channels, and
-              literature workflows, rounding out the broader applied systems
-              toolkit.
-            </p>
+            <p>Supporting tools for exchange APIs, communication, and literature workflows.</p>
           </div>
           <a href="https://github.com/OliverLDS">GitHub Profile</a>
         </article>
