@@ -193,6 +193,10 @@ code {
   margin-bottom: 1.25rem;
 }
 
+.paper-gap {
+  height: clamp(1rem, 2vw, 1.5rem);
+}
+
 .hero-copy h1,
 .page-intro h1,
 .section-heading h2,
