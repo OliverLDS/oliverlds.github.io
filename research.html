@@ -36,25 +36,19 @@
       </p>
     </section>
 
+    <!-- PAPER_BLOCKS_START -->
+
     <section class="paper-highlight reveal">
       <p class="paper-status">Working Paper</p>
       <h2>Decision-Rights Allocation: A Governance-Centric Perspective on LLM-Enabled Agentic Systems</h2>
       <p>
-        LLM-enabled agents are increasingly deployed as components of
-        task-and-decision processes that retrieve information, reason over
-        context, call tools, coordinate with other agents, and act on behalf of
-        humans. This paper asks a central design question: who has the right to
-        make each consequential decision inside the process?
+        LLM-enabled agentic systems are increasingly deployed inside task-and-decision processes that retrieve information, reason over context, call tools, coordinate with other agents, and execute actions on behalf of humans. Existing conceptual work has usefully classified these systems by external behavior, architectural components, cognitive design patterns, autonomy levels, and multi-agent governance forms.
       </p>
       <p>
-        It frames agentic systems as allocations of decision rights among human
-        actors, deterministic components, and stochastic LLM components. The
-        framework provides a compact vocabulary for comparing designs and for
-        deciding when LLMs should act, when infrastructure should constrain
-        them, and when humans should retain or regain control.
+        Those frameworks clarify what agentic systems contain and how they behave, but they often leave implicit a design choice that becomes central once stochastic language models are connected to organizational processes: which party has the effective right to make each consequential decision? This paper proposes decision-rights allocation as a compact internal-mechanism perspective for understanding and designing LLM-enabled agentic systems.
       </p>
       <div class="link-row">
-        <a class="button button-primary" href="files/agentr_decision_rights_allocation_concept_v0.2.pdf">Open PDF</a>
+        <a class="button button-primary" href="files/decision_rights_allocation_concept.pdf">Open PDF</a>
       </div>
     </section>
 
@@ -64,20 +58,33 @@
       <p class="paper-status">Working Paper</p>
       <h2>Reducing LLM Decision Rights in Agentic AI Systems: A Distillation-Based Design Pattern</h2>
       <p>
-        This paper proposes a practical response to broad LLM control: reduce
-        the runtime decision rights of LLM components by distilling their
-        previous decisions into local deterministic or semi-deterministic
-        models.
+        Agentic AI systems increasingly assign decision authority to large language models (LLMs). This design choice improves scalability and adaptability because the same model can interpret new contexts, select tools, route workflows, and generate action plans without task-specific engineering.
       </p>
       <p>
-        The proposal does not reject LLMs. Instead, it uses them as teachers
-        during the learning period, when broad adaptability is needed and the
-        system has not yet accumulated enough local experience.
+        However, it also introduces practical concerns about reliability, transparency, reproducibility, governance, and accountability. This paper proposes a design pattern for reducing the decision rights of LLM components without removing the benefits that make them useful.
       </p>
       <div class="link-row">
-        <a class="button button-primary" href="files/agentr_v0.2_first_draft_fixed.pdf">Open PDF</a>
+        <a class="button button-primary" href="files/reducing_llm_rights.pdf">Open PDF</a>
       </div>
     </section>
+
+    <div class="paper-gap" aria-hidden="true"></div>
+
+    <section class="paper-highlight reveal">
+      <p class="paper-status">Working Paper</p>
+      <h2>agentr: Practical Scaffolding for Coding-AI Workflows</h2>
+      <p>
+        <code>agentr</code> is an R package for specifying, reviewing, and scaffolding agentic AI workflows. Its practical contribution is not to provide another model wrapper, chat interface, or autonomous execution engine.
+      </p>
+      <p>
+        Instead, it supplies a structured layer for using external coding AIs---including repository-aware coding assistants, command-line coding agents, and GUI/API-backed model tools---inside inspectable development workflows. <code>agentr</code> standardizes task-local artifacts for workflow design, memory, curated knowledge, interface expectations, autonomy boundaries, and visual review.
+      </p>
+      <div class="link-row">
+        <a class="button button-primary" href="files/agentr_intro.pdf">Open PDF</a>
+      </div>
+    </section>
+
+    <!-- PAPER_BLOCKS_END -->
   </main>
 
   <footer class="site-footer">
