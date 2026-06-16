@@ -56,12 +56,12 @@
 
     <section class="paper-highlight reveal">
       <p class="paper-status">Working Paper</p>
-      <h2>Reducing LLM Decision Rights in Agentic AI Systems: A Distillation-Based Design Pattern</h2>
+      <h2>Decision-Trace Distillation for Reducing LLM Decision Rights in Agentic AI Systems</h2>
       <p>
-        Agentic AI systems increasingly assign decision authority to large language models (LLMs). This design choice improves scalability and adaptability because the same model can interpret new contexts, select tools, route workflows, and generate action plans without task-specific engineering.
+        LLM-enabled agentic systems increasingly give large language models operational authority over workflow transitions: interpreting goals, selecting evidence, routing subtasks, choosing tools, evaluating intermediate outputs, writing memory, and deciding whether a process should continue, stop, retry, or escalate. This allocation of decision rights is useful because a single stochastic model can supply semantic flexibility across changing tasks, but it also creates governance costs: consequential workflow behavior becomes difficult to reproduce, inspect, audit, and bound.
       </p>
       <p>
-        However, it also introduces practical concerns about reliability, transparency, reproducibility, governance, and accountability. This paper proposes a design pattern for reducing the decision rights of LLM components without removing the benefits that make them useful.
+        This paper proposes *decision-trace distillation* as a design pattern for reducing unnecessary runtime decision rights of LLM components without discarding the adaptability that makes them valuable. During a learning period, the LLM holds broader authority and the system records its decisions together with task context, candidate options, rationales, human feedback, downstream outcomes, overrides, uncertainty signals, and scope or risk tags.
       </p>
       <div class="link-row">
         <a class="button button-primary" href="files/reducing_llm_rights.pdf">Open PDF</a>
