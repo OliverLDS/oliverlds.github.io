@@ -58,10 +58,10 @@
       <p class="paper-status">Working Paper</p>
       <h2>Decision-Trace Distillation for Reducing LLM Decision Rights in Agentic AI Systems</h2>
       <p>
-        LLM-enabled agentic systems increasingly give large language models operational authority over workflow transitions: interpreting goals, selecting evidence, routing subtasks, choosing tools, evaluating intermediate outputs, writing memory, and deciding whether a process should continue, stop, retry, or escalate. This allocation of decision rights is useful because a single stochastic model can supply semantic flexibility across changing tasks, but it also creates governance costs: consequential workflow behavior becomes difficult to reproduce, inspect, audit, and bound.
+        LLM-enabled agentic systems increasingly give large language models operational authority over workflow transitions: interpreting goals, selecting evidence, routing subtasks, choosing tools, evaluating intermediate outputs, writing memory, and deciding whether a process should continue, stop, retry, or escalate. This flexibility is useful when tasks are open-ended or changing, but it also makes consequential workflow behavior harder to reproduce, inspect, audit, and bound.
       </p>
       <p>
-        This paper proposes *decision-trace distillation* as a design pattern for reducing unnecessary runtime decision rights of LLM components without discarding the adaptability that makes them valuable. During a learning period, the LLM holds broader authority and the system records its decisions together with task context, candidate options, rationales, human feedback, downstream outcomes, overrides, uncertainty signals, and scope or risk tags.
+        This paper proposes *decision-trace distillation* as a design pattern for reducing unnecessary runtime decision rights of LLM components without removing the adaptability that makes them valuable. During a learning period, the LLM holds broader authority and the system records its decisions together with task context, candidate options, rationales, human feedback, downstream outcomes, overrides, uncertainty signals, and scope or risk tags.
       </p>
       <div class="link-row">
         <a class="button button-primary" href="files/reducing_llm_rights.pdf">Open PDF</a>
@@ -74,10 +74,10 @@
       <p class="paper-status">Working Paper</p>
       <h2>agentr: Practical Scaffolding for Coding-AI Workflows</h2>
       <p>
-        <code>agentr</code> is an R package for specifying, reviewing, and scaffolding agentic AI workflows. Its practical contribution is not to provide another model wrapper, chat interface, or autonomous execution engine.
+        <code>agentr</code> is an R package for scaffolding coding-AI workflows through inspectable task specifications, review artifacts, and autonomy boundaries. Its contribution is not to provide another model wrapper, chat interface, or autonomous execution engine.
       </p>
       <p>
-        Instead, it supplies a structured layer for using external coding AIs---including repository-aware coding assistants, command-line coding agents, and GUI/API-backed model tools---inside inspectable development workflows. <code>agentr</code> standardizes task-local artifacts for workflow design, memory, curated knowledge, interface expectations, autonomy boundaries, and visual review.
+        Instead, it supplies a project-local structure through which external coding AIs---including repository-aware assistants, command-line agents, and GUI/API-backed model tools---can help design and implement work while leaving intermediate decisions visible. The package focuses on three related capabilities.
       </p>
       <div class="link-row">
         <a class="button button-primary" href="files/agentr_intro.pdf">Open PDF</a>
