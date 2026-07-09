@@ -30,9 +30,9 @@
       <p class="eyebrow">Portfolio</p>
       <h1>Selected projects and repositories.</h1>
       <p class="lead">
-        This page collects applied systems, public tools, and working papers
-        behind my work on agent workflows, model interaction, and research
-        infrastructure.
+        This page collects applied systems, published packages, and public tools
+        behind my work on agent workflows, model interaction, and financial
+        research infrastructure.
       </p>
     </section>
 
@@ -44,8 +44,11 @@
       <div class="stack-list">
         <article class="stack-card reveal">
           <div>
-            <h3>Cognaptus</h3>
-            <p>An AI-knowledge website maintained through a rendered <code>agentr</code> workflow for article planning, content production, publishing, and iterative refinement.</p>
+            <div class="project-topline">
+              <h3>Cognaptus</h3>
+              <span>Live site</span>
+            </div>
+            <p>An AI-knowledge website maintained through an <code>agentr</code>-rendered workflow for article planning, drafting, review, publishing, and iterative refinement.</p>
           </div>
           <a href="https://cognaptus.com/">Visit Website</a>
         </article>
@@ -54,62 +57,77 @@
 
     <section class="section">
       <div class="section-heading compact reveal">
-        <p class="eyebrow">Working Papers</p>
-        <h2>Current research linked to the portfolio.</h2>
+        <p class="eyebrow">Research Context</p>
+        <h2>Working papers behind the systems.</h2>
       </div>
       <div class="stack-list">
         <article class="stack-card reveal">
           <div>
-            <h3>Decision-Rights Allocation</h3>
-            <p>A governance perspective for locating authority among humans, deterministic components, and LLMs inside agentic processes.</p>
+            <div class="project-topline">
+              <h3>Current working papers</h3>
+              <span>Working paper</span>
+            </div>
+            <p>Three manuscripts frame the portfolio: decision-rights allocation, decision-trace distillation, and practical scaffolding for coding-AI workflows.</p>
           </div>
-          <a href="files/decision_rights_allocation_concept.pdf">Open PDF</a>
-        </article>
-
-        <article class="stack-card reveal">
-          <div>
-            <h3>Reducing LLM Decision Rights</h3>
-            <p>A distillation-based design pattern for moving repeated runtime decisions from LLMs into local deterministic or semi-deterministic models.</p>
-          </div>
-          <a href="files/reducing_llm_rights.pdf">Open PDF</a>
-        </article>
-
-        <article class="stack-card reveal">
-          <div>
-            <h3>agentr: Practical Scaffolding</h3>
-            <p>A paper on structured scaffolding for coding-AI workflows built around editable workflow, memory, and interface artifacts.</p>
-          </div>
-          <a href="files/agentr_intro.pdf">Open PDF</a>
+          <a href="research.html">Research Page</a>
         </article>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading compact reveal">
-        <p class="eyebrow">Agent Systems</p>
-        <h2>Design and workflow refinement.</h2>
+        <p class="eyebrow">Published R Packages</p>
+        <h2>CRAN packages.</h2>
       </div>
       <div class="stack-list">
         <article class="stack-card reveal">
           <div>
-            <h3>agentr</h3>
-            <p>A CRAN-published package for specification and review scaffolding: workflows, memory, knowledge, interfaces, proposals, and review artifacts.</p>
+            <div class="project-topline">
+              <h3>agentr</h3>
+              <span>CRAN</span>
+            </div>
+            <p>Specification and review scaffolding for agentic workflows: specs, review HTML, validators, prompt contracts, and portable handoff artifacts.</p>
           </div>
           <a href="https://CRAN.R-project.org/package=agentr">CRAN Package</a>
         </article>
+
+        <article class="stack-card reveal">
+          <div>
+            <div class="project-topline">
+              <h3>okxr</h3>
+              <span>CRAN</span>
+            </div>
+            <p>An R client for the OKX REST API, with typed wrappers for market data, trading, account, asset, and copy-trading endpoints.</p>
+          </div>
+          <a href="https://CRAN.R-project.org/package=okxr">CRAN Package</a>
+        </article>
+
+        <article class="stack-card reveal">
+          <div>
+            <div class="project-topline">
+              <h3>binxr</h3>
+              <span>CRAN</span>
+            </div>
+            <p>An R client for Binance Spot, Futures, and Options REST APIs, including market data, account, and order endpoints.</p>
+          </div>
+          <a href="https://CRAN.R-project.org/package=binxr">CRAN Package</a>
+        </article>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading compact reveal">
-        <p class="eyebrow">Inference Tooling</p>
-        <h2>Model access in R.</h2>
+        <p class="eyebrow">Model Tooling</p>
+        <h2>Hosted inference access.</h2>
       </div>
       <div class="stack-list">
         <article class="stack-card reveal">
           <div>
-            <h3>inferencer</h3>
-            <p>An R and shell toolkit for hosted model APIs, with fallback queries, embeddings, multimodal input, image generation, and terminal helpers.</p>
+            <div class="project-topline">
+              <h3>inferencer</h3>
+              <span>GitHub</span>
+            </div>
+            <p>R and shell tooling for Gemini, Groq, OpenRouter, Cerebras, and Ollama Cloud, including fallback queries, embeddings, image generation, TTS, multimodal input, and terminal helpers.</p>
           </div>
           <a href="https://github.com/OliverLDS/inferencer">Repository</a>
         </article>
@@ -118,64 +136,41 @@
 
     <section class="section">
       <div class="section-heading compact reveal">
-        <p class="eyebrow">Data Infrastructure</p>
-        <h2>Research-ready data access.</h2>
+        <p class="eyebrow">Finance Research Stack</p>
+        <h2>Data, analysis, and execution logic.</h2>
       </div>
       <div class="stack-list">
         <article class="stack-card reveal">
           <div>
-            <h3>investdatar</h3>
-            <p>A local financial data layer with provider sync, gap repair, cadence-aware freshness checks, and analyst-ready dataset descriptions.</p>
+            <div class="project-topline">
+              <h3>investdatar</h3>
+              <span>GitHub</span>
+            </div>
+            <p>The data layer: provider sync, local storage, gap repair, freshness checks, and analyst-ready descriptions for macro and market datasets.</p>
           </div>
           <a href="https://github.com/OliverLDS/investdatar">Repository</a>
         </article>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="section-heading compact reveal">
-        <p class="eyebrow">Research And Strategy</p>
-        <h2>Analysis and execution workflows.</h2>
-      </div>
-      <div class="stack-list">
         <article class="stack-card reveal">
           <div>
-            <h3>investlabr</h3>
-            <p>A macro-financial research package for factor construction, regime analysis, scenario work, dashboards, and briefing-ready charts.</p>
+            <div class="project-topline">
+              <h3>investlabr</h3>
+              <span>GitHub</span>
+            </div>
+            <p>The research layer: factor construction, event and regime analysis, scenario work, dashboards, and briefing-ready charts.</p>
           </div>
           <a href="https://github.com/OliverLDS/investlabr">Repository</a>
         </article>
 
         <article class="stack-card reveal">
           <div>
-            <h3>strategyr</h3>
-            <p>An execution-oriented package for signals, target positions, order intents, hedge planning, and path-dependent backtesting.</p>
+            <div class="project-topline">
+              <h3>strategyr</h3>
+              <span>GitHub</span>
+            </div>
+            <p>The execution layer: strategy signals, target positions, order intents, hedge planning, and path-dependent backtesting.</p>
           </div>
           <a href="https://github.com/OliverLDS/strategyr">Repository</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-heading compact reveal">
-        <p class="eyebrow">Exchange API Clients</p>
-        <h2>Published CRAN packages.</h2>
-      </div>
-      <div class="stack-list">
-        <article class="stack-card reveal">
-          <div>
-            <h3>okxr</h3>
-            <p>An R client for the OKX REST API, with wrappers for market data, trading, account, asset, and copy-trading endpoints.</p>
-          </div>
-          <a href="https://CRAN.R-project.org/package=okxr">CRAN Package</a>
-        </article>
-
-        <article class="stack-card reveal">
-          <div>
-            <h3>binxr</h3>
-            <p>An R client for Binance Spot, Futures, and Options REST APIs, including market data, account, and order endpoints.</p>
-          </div>
-          <a href="https://CRAN.R-project.org/package=binxr">CRAN Package</a>
         </article>
       </div>
     </section>
@@ -188,7 +183,10 @@
       <div class="stack-list">
         <article class="stack-card reveal">
           <div>
-            <h3>dispatchr</h3>
+            <div class="project-topline">
+              <h3>dispatchr</h3>
+              <span>GitHub</span>
+            </div>
             <p>Outbound communication helpers for email, X, and Telegram delivery in agent workflows.</p>
           </div>
           <a href="https://github.com/OliverLDS/dispatchr">Repository</a>
@@ -196,7 +194,10 @@
 
         <article class="stack-card reveal">
           <div>
-            <h3>litxr</h3>
+            <div class="project-topline">
+              <h3>litxr</h3>
+              <span>GitHub</span>
+            </div>
             <p>A local literature-data package for Crossref and arXiv sync, canonical reference stores, BibTeX export, and structured research digests.</p>
           </div>
           <a href="https://github.com/OliverLDS/litxr">Repository</a>
