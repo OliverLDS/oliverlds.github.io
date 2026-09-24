@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Oliver Zhou</title>
+  <meta name="description" content="Oliver Zhou's portfolio: Cognaptus, six CRAN packages, financial research tools, and AI workflow experiments." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -30,9 +31,8 @@
       <p class="eyebrow">Portfolio</p>
       <h1>Selected projects and repositories.</h1>
       <p class="lead">
-        This page collects applied systems, published packages, and public tools
-        behind my work on agent workflows, model interaction, and financial
-        research infrastructure.
+        Applied AI workflows, six CRAN packages, and public tools for research,
+        investment analysis, and simulation.
       </p>
     </section>
 
@@ -48,7 +48,7 @@
               <h3>Cognaptus</h3>
               <span>Live site</span>
             </div>
-            <p>An AI-knowledge website maintained through an <code>agentr</code>-rendered workflow for article planning, drafting, review, publishing, and iterative refinement.</p>
+            <p>An AI knowledge and education website with research insights, courses, applied cases, and data resources. An <code>agentr</code>-rendered workflow supports planning, drafting, review, publishing, and refinement.</p>
           </div>
           <a href="https://cognaptus.com/">Visit Website</a>
         </article>
@@ -67,7 +67,7 @@
               <h3>Current working papers</h3>
               <span>Working paper</span>
             </div>
-            <p>Three manuscripts frame the portfolio: decision-rights allocation, decision-trace distillation, and practical scaffolding for coding-AI workflows.</p>
+            <p>Three papers examine who makes decisions in AI workflows, how repeated decisions can move to local models, and how <code>agentr</code> supports human review.</p>
           </div>
           <a href="research.html">Research Page</a>
         </article>
@@ -77,7 +77,8 @@
     <section class="section">
       <div class="section-heading compact reveal">
         <p class="eyebrow">Published R Packages</p>
-        <h2>Primary package and supporting tools.</h2>
+        <h2>agentr and five supporting packages.</h2>
+        <p>All six are on CRAN. Descriptions cover current development; GitHub may include features beyond the published release.</p>
       </div>
       <div class="stack-list">
         <article class="stack-card reveal">
@@ -86,9 +87,12 @@
               <h3>agentr</h3>
               <span>CRAN</span>
             </div>
-            <p>Specification and review scaffolding for agentic workflows: specs, review HTML, validators, prompt contracts, and portable handoff artifacts.</p>
+            <p>My core package for agent design: editable workflow, memory, and knowledge specs, validators, prompt contracts, and visual review pages for coding assistants to implement approved designs.</p>
           </div>
-          <a href="https://CRAN.R-project.org/package=agentr">CRAN Package</a>
+          <div>
+            <a href="https://CRAN.R-project.org/package=agentr">CRAN Package</a>
+            <a href="https://github.com/OliverLDS/agentr">GitHub</a>
+          </div>
         </article>
 
         <article class="stack-card reveal">
@@ -97,9 +101,12 @@
               <h3>inferencer</h3>
               <span>CRAN</span>
             </div>
-            <p>A supporting tool for hosted model APIs across Gemini, Groq, OpenRouter, Cerebras, and Ollama Cloud, with model discovery, generation, embeddings, image generation, and multimodal input.</p>
+            <p>R and shell tools for hosted and local model APIs, including OpenAI, Gemini, Qwen, DeepSeek, and OpenAI-compatible servers, with fallback queries, embeddings, image generation, TTS, and multimodal input.</p>
           </div>
-          <a href="https://CRAN.R-project.org/package=inferencer">CRAN Package</a>
+          <div>
+            <a href="https://CRAN.R-project.org/package=inferencer">CRAN Package</a>
+            <a href="https://github.com/OliverLDS/inferencer">GitHub</a>
+          </div>
         </article>
 
         <article class="stack-card reveal">
@@ -108,9 +115,12 @@
               <h3>okxr</h3>
               <span>CRAN</span>
             </div>
-            <p>A supporting tool for OKX REST API access, with typed wrappers for market data, trading, account, asset, and copy-trading endpoints.</p>
+            <p>Typed OKX REST API wrappers for market data, accounts, trading, asset history, copy trading, and affiliate data, with shared signing, response parsing, and optional retries.</p>
           </div>
-          <a href="https://CRAN.R-project.org/package=okxr">CRAN Package</a>
+          <div>
+            <a href="https://CRAN.R-project.org/package=okxr">CRAN Package</a>
+            <a href="https://github.com/OliverLDS/okxr">GitHub</a>
+          </div>
         </article>
 
         <article class="stack-card reveal">
@@ -119,37 +129,58 @@
               <h3>binxr</h3>
               <span>CRAN</span>
             </div>
-            <p>A supporting tool for Binance Spot, Futures, and Options REST APIs, including market data, account, and order endpoints.</p>
+            <p>A Binance REST client for Spot, USD-M Futures, and Options, returning market data, account information, and order results as R tables.</p>
           </div>
-          <a href="https://CRAN.R-project.org/package=binxr">CRAN Package</a>
+          <div>
+            <a href="https://CRAN.R-project.org/package=binxr">CRAN Package</a>
+            <a href="https://github.com/OliverLDS/binxr">GitHub</a>
+          </div>
+        </article>
+
+        <article class="stack-card reveal">
+          <div>
+            <div class="project-topline">
+              <h3>investdatar</h3>
+              <span>CRAN</span>
+            </div>
+            <p>Retrieves and synchronizes macro, market, company, and positioning data from sources including FRED, SEC EDGAR, SDMX agencies, and crypto exchanges, with local storage and freshness checks.</p>
+          </div>
+          <div>
+            <a href="https://CRAN.R-project.org/package=investdatar">CRAN Package</a>
+            <a href="https://github.com/OliverLDS/investdatar">GitHub</a>
+          </div>
+        </article>
+
+        <article class="stack-card reveal">
+          <div>
+            <div class="project-topline">
+              <h3>strategyr</h3>
+              <span>CRAN</span>
+            </div>
+            <p>Turns market features and portfolio state into signals, target allocations, and order intents, with walk-forward strategy evaluation and backtests that track changing account state.</p>
+          </div>
+          <div>
+            <a href="https://CRAN.R-project.org/package=strategyr">CRAN Package</a>
+            <a href="https://github.com/OliverLDS/strategyr">GitHub</a>
+          </div>
         </article>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading compact reveal">
-        <p class="eyebrow">Finance Research Stack</p>
-        <h2>Data, analysis, and execution logic.</h2>
+        <p class="eyebrow">Financial Research and Simulation</p>
+        <h2>Analyze ideas and simulate execution.</h2>
+        <p><code>investdatar</code> supplies data; <code>investlabr</code> supports analysis; <code>strategyr</code> forms decisions; <code>tradesimr</code> simulates their execution.</p>
       </div>
       <div class="stack-list">
-        <article class="stack-card reveal">
-          <div>
-            <div class="project-topline">
-              <h3>investdatar</h3>
-              <span>GitHub</span>
-            </div>
-            <p>The data layer: provider sync, local storage, gap repair, freshness checks, and analyst-ready descriptions for macro and market datasets.</p>
-          </div>
-          <a href="https://github.com/OliverLDS/investdatar">Repository</a>
-        </article>
-
         <article class="stack-card reveal">
           <div>
             <div class="project-topline">
               <h3>investlabr</h3>
               <span>GitHub</span>
             </div>
-            <p>The research layer: factor construction, event and regime analysis, scenario work, dashboards, and briefing-ready charts.</p>
+            <p>Macro and cross-asset research tools for factors, event analysis, scenarios, and investment briefings, with reusable chart styles and publishing artifacts.</p>
           </div>
           <a href="https://github.com/OliverLDS/investlabr">Repository</a>
         </article>
@@ -157,20 +188,20 @@
         <article class="stack-card reveal">
           <div>
             <div class="project-topline">
-              <h3>strategyr</h3>
+              <h3>tradesimr</h3>
               <span>GitHub</span>
             </div>
-            <p>The execution layer: strategy signals, target positions, order intents, hedge planning, and path-dependent backtesting.</p>
+            <p>An R trading simulator with a C++ execution core for multi-asset orders, positions, margin, funding, and costs, supporting historical replay and incremental exchange simulation.</p>
           </div>
-          <a href="https://github.com/OliverLDS/strategyr">Repository</a>
+          <a href="https://github.com/OliverLDS/tradesimr">Repository</a>
         </article>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading compact reveal">
-        <p class="eyebrow">Supporting Tools</p>
-        <h2>Related packages.</h2>
+        <p class="eyebrow">Supporting Tools and Experiments</p>
+        <h2>Literature, communication, and practical utilities.</h2>
       </div>
       <div class="stack-list">
         <article class="stack-card reveal">
@@ -190,9 +221,42 @@
               <h3>litxr</h3>
               <span>GitHub</span>
             </div>
-            <p>A local literature-data package for Crossref and arXiv sync, canonical reference stores, BibTeX export, and structured research digests.</p>
+            <p>A local literature library with Crossref and arXiv ingestion, reference indexing, Markdown full text, embedding search, structured AI digests, and BibTeX export.</p>
           </div>
           <a href="https://github.com/OliverLDS/litxr">Repository</a>
+        </article>
+
+        <article class="stack-card reveal">
+          <div>
+            <div class="project-topline">
+              <h3>SVG Nudger</h3>
+              <span>GitHub</span>
+            </div>
+            <p>A browser tool for refining generated SVG figures through object alignment, resizing, text edits, and direct path manipulation.</p>
+          </div>
+          <a href="https://github.com/OliverLDS/svg-nudger">Repository</a>
+        </article>
+
+        <article class="stack-card reveal">
+          <div>
+            <div class="project-topline">
+              <h3>Werewolf</h3>
+              <span>GitHub</span>
+            </div>
+            <p>A terminal game with one human and five AI players, using separate memories and role-based information access to constrain each agent's decisions.</p>
+          </div>
+          <a href="https://github.com/OliverLDS/werewolf">Repository</a>
+        </article>
+
+        <article class="stack-card reveal">
+          <div>
+            <div class="project-topline">
+              <h3>hexz</h3>
+              <span>GitHub</span>
+            </div>
+            <p>A small macOS command-line toolkit for inspecting, searching, and patching binary files, with previews and backups before edits.</p>
+          </div>
+          <a href="https://github.com/OliverLDS/hexz">Repository</a>
         </article>
       </div>
     </section>

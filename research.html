@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research | Oliver Zhou</title>
+  <meta name="description" content="Working papers on decision rights in agentic AI, decision-trace distillation, and agentr scaffolding for coding-AI workflows." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -30,9 +31,10 @@
       <p class="eyebrow">Research</p>
       <h1>Current research interests.</h1>
       <p class="lead">
-        My current research focuses on agentic AI in data science, on how AI can
-        improve the quality and efficiency of investment decisions, and on how AI
-        can support better content creation with lower labor cost.
+        I study how humans, language models, and deterministic software should
+        share decisions in AI-assisted work. My applications span data science,
+        investment research, and content creation, with an emphasis on quality,
+        efficiency, and human oversight.
       </p>
     </section>
 
@@ -42,10 +44,10 @@
       <p class="paper-status">Working Paper</p>
       <h2>Decision-Rights Allocation: A Governance-Centric Perspective on LLM-Enabled Agentic Systems</h2>
       <p>
-        LLM-enabled agentic systems are increasingly deployed inside task-and-decision processes that retrieve information, reason over context, call tools, coordinate with other agents, and execute actions on behalf of humans. Existing conceptual work has usefully classified these systems by external behavior, architectural components, cognitive design patterns, autonomy levels, and multi-agent governance forms.
+        A framework for assigning consequential decisions among humans, deterministic software, and language models. It interprets retrieval, validation, memory, and human review as mechanisms for allocating decision rights.
       </p>
       <p>
-        Those frameworks clarify what agentic systems contain and how they behave, but they often leave implicit a design choice that becomes central once stochastic language models are connected to organizational processes: which party has the effective right to make each consequential decision? This paper proposes decision-rights allocation as a compact internal-mechanism perspective for understanding and designing LLM-enabled agentic systems.
+        The paper proposes an analytical model for balancing adaptability, risk, auditability, and human capacity when deciding where authority should sit.
       </p>
       <div class="link-row">
         <a class="button button-primary" href="files/decision_rights_allocation_concept.pdf">Open PDF</a>
@@ -58,10 +60,10 @@
       <p class="paper-status">Working Paper</p>
       <h2>Decision-Trace Distillation for Reducing LLM Decision Rights in Agentic AI Systems</h2>
       <p>
-        LLM-enabled agentic systems increasingly give large language models operational authority over workflow transitions: interpreting goals, selecting evidence, routing subtasks, choosing tools, evaluating intermediate outputs, writing memory, and deciding whether a process should continue, stop, retry, or escalate. This flexibility is useful when tasks are open-ended or changing, but it also makes consequential workflow behavior harder to reproduce, inspect, audit, and bound.
+        This paper proposes learning from recorded LLM decisions to train local components for repeated, well-defined tasks. Those components receive decision rights only when confidence, scope, and risk conditions are met; uncertain or novel cases remain with an LLM or human reviewer.
       </p>
       <p>
-        This paper proposes *decision-trace distillation* as a design pattern for reducing unnecessary runtime decision rights of LLM components without removing the adaptability that makes them valuable. During a learning period, the LLM holds broader authority and the system records its decisions together with task context, candidate options, rationales, human feedback, downstream outcomes, overrides, uncertainty signals, and scope or risk tags.
+        It develops the decision-trace distillation mechanism and proposes an evaluation using article structure, cover-image themes, and economic-data insights.
       </p>
       <div class="link-row">
         <a class="button button-primary" href="files/reducing_llm_rights.pdf">Open PDF</a>
@@ -74,10 +76,10 @@
       <p class="paper-status">Working Paper</p>
       <h2>agentr: Practical Scaffolding for Coding-AI Workflows</h2>
       <p>
-        <code>agentr</code> is an R package for scaffolding coding-AI workflows through inspectable task specifications, review artifacts, and autonomy boundaries. Its contribution is not to provide another model wrapper, chat interface, or autonomous execution engine.
+        This paper introduces <code>agentr</code> as a reviewable layer between human intent and coding-AI implementation. It makes task design, assumptions, and autonomy boundaries explicit before code is executed.
       </p>
       <p>
-        Instead, it supplies a project-local structure through which external coding AIs---including repository-aware assistants, command-line agents, and GUI/API-backed model tools---can help design and implement work while leaving intermediate decisions visible. The package focuses on three related capabilities.
+        Its three contributions are portable task specifications, a development process combining coding assistants with human review and Git, and visual review pages for inspecting designs and approval gates.
       </p>
       <div class="link-row">
         <a class="button button-primary" href="files/agentr_intro.pdf">Open PDF</a>
